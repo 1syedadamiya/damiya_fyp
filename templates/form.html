@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Multi Step Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-light shadow justify-content-center">
+      <a class="navbar-brand">
+        <img src="../images/logotext.png" style="width:140px; height:50px;" alt="logo">
+      </a>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-8 col-sm-7">
+          <h3>Fill the Form</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-md-4 col-sm-5">
+          <img src="../images/form.png" class="image-fluid" style="width:290px; height:260px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 m-auto">
+          <form>
+            <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active">
+              <h3>Personal Info</h3>
+              <div class="multisteps-form__content">
+                <div class="form-row mt-4 justify-content-around">
+                  <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+                    <input class="multisteps-form__input form-control" type="text" placeholder="Full Name" required/>
+                    <span class="focus-input-name"></span>
+                  </div>
+                  <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+                    <input class="multisteps-form__input form-control" type="text" placeholder="E mail" required/>
+                    <span class="focus-input-name"></span>
+                  </div>
+                </div>
+                <div class="form-row mt-4 justify-content-around">
+                  <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+                    <input class="multisteps-form__input form-control" type="text" placeholder="Phone No." required/>
+                    <span class="focus-input-name"></span>
+                  </div>
+                  <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                    <input class="multisteps-form__input form-control" type="text" placeholder="City" required/>
+                    <span class="focus-input-name"></span>
+                  </div>
+                </div>
+                <div class="form-row mt-4 justify-content-around">
+                  <div class="col-lg-11 col-md-11 col-sm-12 mt-4 mt-sm-0">
+
+                    <input class="multisteps-form__input form-control" type="text" placeholder="Address" required/>
+                    <span class="focus-input-name"></span>
+                  </div>
+                </div>
+                <div class="form-row mt-4 justify-content-around">
+                  <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                    <select class="multisteps-form__select form-control">
+                      <option disabled selected>Gender</option>
+                      <option>Female</option>
+                      <option>Male</option>
+                    </select>
+                    <span class="focus-input-name"></span>
+                  </div>
+                  <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                    <input class="multisteps-form__input form-control" type="text" placeholder="Age" required/>
+                    <span class="focus-input-name"></span>
+                  </div>
+                </div>
+                <div class="form-row mt-4 justify-content-around">
+                  <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                    <input class="multisteps-form__input form-control" type="text" placeholder="Religion" required/>
+                    <span class="focus-input-name"></span>
+                  </div>
+                  <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                    <input class="multisteps-form__input form-control" type="text" placeholder="Nationality" required/>
+                    <span class="focus-input-name"></span>
+                  </div>
+                </div>
+                <div class="form-row mt-4 justify-content-around">
+                  <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                    <input class="multisteps-form__input form-control" type="text" placeholder="Gaurdian's Name" required/>
+                    <span class="focus-input-name"></span>
+                  </div>
+                  <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                    <input class="multisteps-form__input form-control" type="text" placeholder="Gaurdian's Income" required/>
+                    <span class="focus-input-name"></span>
+                  </div>
+                </div>
+                <h3 class="multisteps-form__title">Academic Info</h3>
+                <div class="multisteps-form__content">
+                  <div class="row  justify-content-around">
+                    <div class="multisteps-form__subtitle text-muted p-2 mt-4 col-lg-11 col-md-11 col-sm-11">
+                      <h5 class="pl-2 pt-1">Matriculation Info:</h5>
+                    </div>
+                  </div>
+                  <div class="form-row mt-4 justify-content-around">
+                    <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                      <input class="multisteps-form__input form-control" type="text" placeholder="Name of School" required/>
+                      <span class="focus-input-name"></span>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                      <input class="multisteps-form__input form-control" type="text" placeholder="Matric Marks" required/>
+                      <span class="focus-input-name"></span>
+                    </div>
+                  </div>
+                  <div class="form-row mt-4 justify-content-around">
+                    <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                      <input class="multisteps-form__input form-control" type="text" placeholder="Year" required/>
+                      <span class="focus-input-name"></span>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                      <input class="multisteps-form__input form-control" type="text" placeholder="Grade" required/>
+                      <span class="focus-input-name"></span>
+                    </div>
+                  </div>
+                  <div class="form-row mt-4 justify-content-around">
+                    <div class="col-lg-11 col-md-11 col-sm-12 mt-4 mt-sm-0">
+
+                      <input class="multisteps-form__input form-control" type="text" placeholder="Board Name" required/>
+                      <span class="focus-input-name"></span>
+                    </div>
+                  </div>
+
+                  <div class="row  justify-content-around">
+                    <div class="multisteps-form__subtitle text-muted p-2 mt-4 col-lg-11 col-md-11 col-sm-11">
+                      <h5 class="pl-2 pt-1">Intermediate Info:</h5>
+                    </div>
+                  </div>
+                  <div class="form-row mt-4 justify-content-around">
+                    <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                      <input class="multisteps-form__input form-control" type="text" placeholder="Name of College" required/>
+                      <span class="focus-input-name"></span>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                      <input class="multisteps-form__input form-control" type="text" placeholder="Inter Marks" required/>
+                      <span class="focus-input-name"></span>
+                    </div>
+                  </div>
+                  <div class="form-row mt-4 justify-content-around">
+                    <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                      <input class="multisteps-form__input form-control" type="text" placeholder="Year" required/>
+                      <span class="focus-input-name"></span>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                      <input class="multisteps-form__input form-control" type="text" placeholder="Grade" required/>
+                      <span class="focus-input-name"></span>
+                    </div>
+                  </div>
+                  <div class="form-row mt-4 justify-content-around">
+                    <div class="col-lg-11 col-md-11 col-sm-12 mt-4 mt-sm-0">
+
+                      <input class="multisteps-form__input form-control" type="text" placeholder="Board Name" required/>
+                      <span class="focus-input-name"></span>
+                    </div>
+                  </div>
+                  <h3 class="multisteps-form__title">Your Interest</h3>
+                  <div class="multisteps-form__content">
+                    <div class="form-row mt-4 justify-content-around">
+                      <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                        <input class="multisteps-form__input form-control" type="text" placeholder="University Name" required/>
+                        <span class="focus-input-name"></span>
+                      </div>
+                      <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+
+                        <input class="multisteps-form__input form-control" type="text" placeholder="Field" required/>
+                        <span class="focus-input-name"></span>
+                      </div>
+                    </div>
+                <div class="button-row d-flex mt-4">
+                  <button class="btn-send btn-primary ml-auto" type="submit" title="Next">Submit</button>
+                </div>
+              </div>
+            </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
