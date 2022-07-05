@@ -3,5 +3,6 @@ from .views import form
 from . import views
 urlpatterns = [
     path('form/', form, name="form"),
+    path('profile/', profile, name="profile"),
 ]
    
