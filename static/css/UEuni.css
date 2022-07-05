@@ -15,10 +15,15 @@
 
   padding-bottom: 10px;
   border-bottom-style: solid;
-  border-color: green;
+  border-color: #84CD4E;
   border-bottom-width: 3.1px;
   width: fit-content;
 }
+
+.btn{
+  background-image: linear-gradient(45deg, #84CD4E, #59E9B5);
+}
+
 
 .merit_box{
   border-radius:0px;
