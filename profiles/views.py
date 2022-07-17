@@ -11,3 +11,10 @@ def profile(request):
 
 def home(request):
     return render(request, "home.html")
+
+
+def dashboard(request):
+    return render(request, "recommendation.html")
+
+def savedlinks(request):
+    return render(request, "saved.html")
