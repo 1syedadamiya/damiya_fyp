@@ -7,3 +7,7 @@ def recommendation(request):
 
 def savedlinks(request):
     return render(request, "saved.html")
+
+
+def aboutus(request):
+    return render(request, "aboutus.html")
