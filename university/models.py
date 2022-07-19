@@ -8,5 +8,6 @@ class University (models.Model):
     eligibilty_criteria = models.CharField(max_length=500)
     fee_structure = models.IntegerField()
     
-
+def __str__(self):
+        return self.university_name
 # Create your models here.
