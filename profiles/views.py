@@ -13,8 +13,7 @@ def home(request):
     return render(request, "home.html")
 
 
-def dashboard(request):
-    return render(request, "recommendation.html")
+def edit(request):
+    return render(request, "edit.html")
 
-def savedlinks(request):
-    return render(request, "saved.html")
+
