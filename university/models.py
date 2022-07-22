@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
  
 class University (models.Model):
-    university_name = models.CharField(max_length=50)
+    university_name = models.CharField(max_length=50, blank= True)
     program_name = models.CharField(max_length=50)
     last_merit = models.CharField(max_length=50)
     eligibilty_criteria = models.CharField(max_length=1500)
