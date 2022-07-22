@@ -11,3 +11,7 @@ def profile(request):
 
 def home(request):
     return render(request, "home.html")
+
+
+def edit(request):
+    return render(request, "edit.html")

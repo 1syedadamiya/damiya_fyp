@@ -1,9 +1,9 @@
 from django.urls import path
-from .views import dashboard, savedlinks
+from .views import recommendation, savedlinks, aboutus
 from . import views
-
 urlpatterns = [
-    path('dashboard/', dashboard, name="dashboard"),
+    path('recommendation/', recommendation, name="recommendation"),
     path('savedlinks/', savedlinks, name="savedlinks"),
-]
+    path('aboutus/', aboutus, name="aboutus"),
 
+]
