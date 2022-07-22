@@ -1,9 +1,10 @@
 from django.urls import path
-from .views import uetuni, ueuni, puuni, kcuni, ituuni, lcwuuni, gcuni, gccs, gcee, itucs, ituce, ituee, kccs, lcwuae, lcwucs, lcwucrp, lcwuee, lcwuse, punewbbit, punewce, punewcs, punewds, punewit, punewee, punewiem, punewenre, punewmme, punewpe, punewse, punewte, puoldcs, puoldds, puoldit, puoldse, uecs, ueit, uetaed, ueta, uetce, uetcrp, uetcs, uetcompe, uetcvle, ueteer, uetee, uetge, uetime, uetmce, uetme, uetmme, uetmine, uetpge, uetpid, uetppe, uettem, uetwre
+from .views import uetuni, ueuni, puuni, kcuni, ituuni, lcwuuni, gcuni, gccs, gcee, itucs, ituce, ituee, kccs, lcwuae, lcwucs, lcwucrp, lcwuee, lcwuse, punewbbit, punewce, punewcs, punewds, punewit, punewee, punewiem, punewenre, punewmme, punewpe, punewse, punewte, puoldcs, puoldds, puoldit, puoldse, uecs, ueit, uetdepts
 from . import views
 urlpatterns = [
     path('gcuni/', gcuni, name="gcuni"),
     path('uetuni/', uetuni, name="uetuni"),
+    path('uetuni/<str:deptname>/', uetdepts, name="uetdepts"),
     path('ueuni/', ueuni, name="ueuni"),
     path('puuni/', puuni, name="puuni"),
     path('kcuni/', kcuni, name="kcuni"),
@@ -38,25 +39,5 @@ urlpatterns = [
     path('puoldse/', puoldse, name="puoldse"),
     path('uecs/', uecs, name="uecs"),
     path('ueit/', ueit, name="ueit"),
-    path('uetaed/', uetaed, name="uetaed"),
-    path('ueta/', ueta, name="ueta"),
-    path('uetce/', uetce, name="uetce"),
-    path('uetcrp/', uetcrp, name="uetcrp"),
-    path('uetcs/', uetcs, name="uetcs"),
-    path('uetcompe/', uetcompe, name="uetcompe"),
-    path('uetcvle/', uetcvle, name="uetcvle"),
-    path('ueteer/', ueteer, name="ueteer"),
-    path('uetee/', uetee, name="uetee"),
-    path('uetge/', uetge, name="uetge"),
-    path('uetime/', uetime, name="uetime"),
-    path('uetmce/', uetmce, name="uetmce"),
-    path('uetme/', uetme, name="uetme"),
-    path('uetmme/', uetmme, name="uetmme"),
-    path('uetmine/', uetmine, name="uetmine"),
-    path('uetpge/', uetpge, name="uetpge"),
-    path('uetpid/', uetpid, name="uetpid"),
-    path('uetppe/', uetppe, name="uetppe"),
-    path('uettem/', uettem, name="uettem"),
-    path('uetwre/', uetwre, name="uetwre"),
 ]
    

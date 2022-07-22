@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import University
 
 def gcuni(request):
     return render(request, "GCuni.html")
@@ -15,6 +16,17 @@ def kcuni(request):
 def lcwuuni(request):
     return render(request, "LCWUuni.html")
   
+def uetdepts(request,deptname):
+    query = University.objects.filter(university_name__contains='University of Engineering and Technology') and University.objects.filter(program_abbreviation__contains=deptname)
+    print(query)
+    for value in query:
+        program_name = value.program_name
+        eligibilty_criteria = value.eligibilty_criteria
+    context = {'program_name': program_name,
+    'eligibilty_criteria': eligibilty_criteria
+    }
+    return render(request, "UETdepartments.html",context)
+
 def uetuni(request):
     return render(request, "UETuni.html")
   
@@ -109,65 +121,7 @@ def uecs(request):
 def ueit(request):
     return render(request, "UE[IT].html")
 
-def uetaed(request):
-    return render(request, "UET[AED].html")
 
-def ueta(request):
-    return render(request, "UET[A].html")
-
-def uetce(request):
-    return render(request, "UET[CE].html")
-
-def uetcrp(request):
-    return render(request, "UET[CRP].html")
-
-def uetcs(request):
-    return render(request, "UET[CS].html")
-
-def uetcompe(request):
-    return render(request, "UET[Comp.E].html")
-
-def uetcvle(request):
-    return render(request, "UET[Cvl.E].html")
-
-def ueteer(request):
-    return render(request, "UET[EER].html")
-
-def uetee(request):
-    return render(request, "UET[EE].html")
-
-def uetge(request):
-    return render(request, "UET[GE].html")
-
-def uetime(request):
-    return render(request, "UET[IME].html")
-
-def uetmce(request):
-    return render(request, "UET[MCE].html")
-
-def uetme(request):
-    return render(request, "UET[ME].html")
-
-def uetmme(request):
-    return render(request, "UET[MME].html")
-
-def uetmine(request):
-    return render(request, "UET[Min.E].html")
-
-def uetpge(request):
-    return render(request, "UET[PGE].html")
-
-def uetpid(request):
-    return render(request, "UET[PID].html")
-
-def uetppe(request):
-    return render(request, "UET[PPE].html")
-
-def uettem(request):
-    return render(request, "UET[TEM].html")
-
-def uetwre(request):
-    return render(request, "UET[wre].html")
 
 
 
