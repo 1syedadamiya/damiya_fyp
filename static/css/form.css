@@ -33,6 +33,59 @@ section {
   margin: 35px auto 50px;
 }
 
+
+.about-shape-1 {
+  position: absolute;
+  top: 500px;
+  left: -30px;
+  width: 30%;
+  height: 100%;
+  z-index: -5; }
+  .about-shape-1 img {
+    opacity: 0.7;
+    width: 100%; }
+  @media (max-width: 990px) {
+    .about-shape-1 {
+      display: none; } }
+  @media (max-width: 1200px) {
+    .about-shape-1 {
+      width: 35%; } }
+
+.about-shape-2 {
+  position: absolute;
+  top: 300px;
+  right: -60px;
+  width: 35%;
+  z-index: -5; }
+  .about-shape-2 img {
+    opacity: 0.7;
+    width: 100%; }
+  @media (max-width: 990px) {
+    .about-shape-2 {
+      display: none; } }
+  @media (max-width: 1200px) {
+    .about-shape-2 {
+      top: 370px;
+      width: 45%; } }
+
+.about-shape-3 {
+  position: absolute;
+  top: 1000px;
+  right: -40px;
+  width: 50%;
+  z-index: -5; }
+  .about-shape-3 img {
+    opacity: 0.6;
+    width: 100%; }
+  @media (max-width: 990px) {
+    .about-shape-3 {
+      display: none; } }
+  @media (max-width: 1200px) {
+    .about-shape-3 {
+      top: 370px;
+      width: 45%; } }
+
+
 .multisteps-form__progress {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
@@ -107,6 +160,7 @@ section {
 }
 
 .multisteps-form__panel {
+  border-radius: 30px;
   position: absolute;
   top: 0;
   left: 0;

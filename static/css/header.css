@@ -166,289 +166,6 @@ p {
 .slick-slide {
   outline: 0; }
 
-/*===== All Preloader Style =====*/
-.preloader {
-  /* Body Overlay */
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: table;
-  height: 100%;
-  width: 100%;
-  /* Change Background Color */
-  background: #fff;
-  z-index: 99999; }
-  .preloader .loader {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center; }
-    .preloader .loader .ytp-spinner {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 64px;
-      margin-left: -32px;
-      z-index: 18;
-      pointer-events: none; }
-      .preloader .loader .ytp-spinner .ytp-spinner-container {
-        pointer-events: none;
-        position: absolute;
-        width: 100%;
-        padding-bottom: 100%;
-        top: 50%;
-        left: 50%;
-        margin-top: -50%;
-        margin-left: -50%;
-        -webkit-animation: ytp-spinner-linspin 1568.23529647ms linear infinite;
-        -moz-animation: ytp-spinner-linspin 1568.23529647ms linear infinite;
-        -o-animation: ytp-spinner-linspin 1568.23529647ms linear infinite;
-        animation: ytp-spinner-linspin 1568.23529647ms linear infinite; }
-        .preloader .loader .ytp-spinner .ytp-spinner-container .ytp-spinner-rotator {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          -webkit-animation: ytp-spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-          -moz-animation: ytp-spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-          -o-animation: ytp-spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-          animation: ytp-spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both; }
-          .preloader .loader .ytp-spinner .ytp-spinner-container .ytp-spinner-rotator .ytp-spinner-left {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            overflow: hidden;
-            right: 50%; }
-          .preloader .loader .ytp-spinner .ytp-spinner-container .ytp-spinner-rotator .ytp-spinner-right {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            overflow: hidden;
-            left: 50%; }
-    .preloader .loader .ytp-spinner-circle {
-      box-sizing: border-box;
-      position: absolute;
-      width: 200%;
-      height: 100%;
-      border-style: solid;
-      /* Spinner Color */
-      border-color: #361CC1 #361CC1 #E1E1E1;
-      border-radius: 50%;
-      border-width: 6px; }
-    .preloader .loader .ytp-spinner-left .ytp-spinner-circle {
-      left: 0;
-      right: -100%;
-      border-right-color: #E1E1E1;
-      -webkit-animation: ytp-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-      -moz-animation: ytp-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-      -o-animation: ytp-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-      animation: ytp-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both; }
-    .preloader .loader .ytp-spinner-right .ytp-spinner-circle {
-      left: -100%;
-      right: 0;
-      border-left-color: #E1E1E1;
-      -webkit-animation: ytp-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-      -moz-animation: ytp-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-      -o-animation: ytp-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-      animation: ytp-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both; }
-
-/* Preloader Animations */
-@-webkit-keyframes ytp-spinner-linspin {
-  to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@keyframes ytp-spinner-linspin {
-  to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@-webkit-keyframes ytp-spinner-easespin {
-  12.5% {
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    transform: rotate(135deg); }
-  25% {
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    transform: rotate(270deg); }
-  37.5% {
-    -webkit-transform: rotate(405deg);
-    -moz-transform: rotate(405deg);
-    -ms-transform: rotate(405deg);
-    -o-transform: rotate(405deg);
-    transform: rotate(405deg); }
-  50% {
-    -webkit-transform: rotate(540deg);
-    -moz-transform: rotate(540deg);
-    -ms-transform: rotate(540deg);
-    -o-transform: rotate(540deg);
-    transform: rotate(540deg); }
-  62.5% {
-    -webkit-transform: rotate(675deg);
-    -moz-transform: rotate(675deg);
-    -ms-transform: rotate(675deg);
-    -o-transform: rotate(675deg);
-    transform: rotate(675deg); }
-  75% {
-    -webkit-transform: rotate(810deg);
-    -moz-transform: rotate(810deg);
-    -ms-transform: rotate(810deg);
-    -o-transform: rotate(810deg);
-    transform: rotate(810deg); }
-  87.5% {
-    -webkit-transform: rotate(945deg);
-    -moz-transform: rotate(945deg);
-    -ms-transform: rotate(945deg);
-    -o-transform: rotate(945deg);
-    transform: rotate(945deg); }
-  to {
-    -webkit-transform: rotate(1080deg);
-    -moz-transform: rotate(1080deg);
-    -ms-transform: rotate(1080deg);
-    -o-transform: rotate(1080deg);
-    transform: rotate(1080deg); } }
-
-@keyframes ytp-spinner-easespin {
-  12.5% {
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    transform: rotate(135deg); }
-  25% {
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    transform: rotate(270deg); }
-  37.5% {
-    -webkit-transform: rotate(405deg);
-    -moz-transform: rotate(405deg);
-    -ms-transform: rotate(405deg);
-    -o-transform: rotate(405deg);
-    transform: rotate(405deg); }
-  50% {
-    -webkit-transform: rotate(540deg);
-    -moz-transform: rotate(540deg);
-    -ms-transform: rotate(540deg);
-    -o-transform: rotate(540deg);
-    transform: rotate(540deg); }
-  62.5% {
-    -webkit-transform: rotate(675deg);
-    -moz-transform: rotate(675deg);
-    -ms-transform: rotate(675deg);
-    -o-transform: rotate(675deg);
-    transform: rotate(675deg); }
-  75% {
-    -webkit-transform: rotate(810deg);
-    -moz-transform: rotate(810deg);
-    -ms-transform: rotate(810deg);
-    -o-transform: rotate(810deg);
-    transform: rotate(810deg); }
-  87.5% {
-    -webkit-transform: rotate(945deg);
-    -moz-transform: rotate(945deg);
-    -ms-transform: rotate(945deg);
-    -o-transform: rotate(945deg);
-    transform: rotate(945deg); }
-  to {
-    -webkit-transform: rotate(1080deg);
-    -moz-transform: rotate(1080deg);
-    -ms-transform: rotate(1080deg);
-    -o-transform: rotate(1080deg);
-    transform: rotate(1080deg); } }
-
-@-webkit-keyframes ytp-spinner-left-spin {
-  0% {
-    -webkit-transform: rotate(130deg);
-    -moz-transform: rotate(130deg);
-    -ms-transform: rotate(130deg);
-    -o-transform: rotate(130deg);
-    transform: rotate(130deg); }
-  50% {
-    -webkit-transform: rotate(-5deg);
-    -moz-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    -o-transform: rotate(-5deg);
-    transform: rotate(-5deg); }
-  to {
-    -webkit-transform: rotate(130deg);
-    -moz-transform: rotate(130deg);
-    -ms-transform: rotate(130deg);
-    -o-transform: rotate(130deg);
-    transform: rotate(130deg); } }
-
-@keyframes ytp-spinner-left-spin {
-  0% {
-    -webkit-transform: rotate(130deg);
-    -moz-transform: rotate(130deg);
-    -ms-transform: rotate(130deg);
-    -o-transform: rotate(130deg);
-    transform: rotate(130deg); }
-  50% {
-    -webkit-transform: rotate(-5deg);
-    -moz-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    -o-transform: rotate(-5deg);
-    transform: rotate(-5deg); }
-  to {
-    -webkit-transform: rotate(130deg);
-    -moz-transform: rotate(130deg);
-    -ms-transform: rotate(130deg);
-    -o-transform: rotate(130deg);
-    transform: rotate(130deg); } }
-
-@-webkit-keyframes ytp-right-spin {
-  0% {
-    -webkit-transform: rotate(-130deg);
-    -moz-transform: rotate(-130deg);
-    -ms-transform: rotate(-130deg);
-    -o-transform: rotate(-130deg);
-    transform: rotate(-130deg); }
-  50% {
-    -webkit-transform: rotate(5deg);
-    -moz-transform: rotate(5deg);
-    -ms-transform: rotate(5deg);
-    -o-transform: rotate(5deg);
-    transform: rotate(5deg); }
-  to {
-    -webkit-transform: rotate(-130deg);
-    -moz-transform: rotate(-130deg);
-    -ms-transform: rotate(-130deg);
-    -o-transform: rotate(-130deg);
-    transform: rotate(-130deg); } }
-
-@keyframes ytp-right-spin {
-  0% {
-    -webkit-transform: rotate(-130deg);
-    -moz-transform: rotate(-130deg);
-    -ms-transform: rotate(-130deg);
-    -o-transform: rotate(-130deg);
-    transform: rotate(-130deg); }
-  50% {
-    -webkit-transform: rotate(5deg);
-    -moz-transform: rotate(5deg);
-    -ms-transform: rotate(5deg);
-    -o-transform: rotate(5deg);
-    transform: rotate(5deg); }
-  to {
-    -webkit-transform: rotate(-130deg);
-    -moz-transform: rotate(-130deg);
-    -ms-transform: rotate(-130deg);
-    -o-transform: rotate(-130deg);
-    transform: rotate(-130deg); } }
-
 /*===========================
       02.HEADER css
 ===========================*/
@@ -475,6 +192,23 @@ p {
   padding: 10px 0;
   position: relative;
   transition: all 0.3s ease-out 0s; }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-brand {
+      width: 30%; } }
+  @media (max-width: 767px) {
+    .navbar-brand {
+      width: 30%; } }
+
+.navbar-brand img {
+  width: 30%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-brand img {
+      width: 50%; } }
+  @media (max-width: 767px) {
+    .navbar-brand img {
+      width: 70%; } }
 
 .navbar-toggler {
   padding: 0; }
@@ -524,7 +258,8 @@ p {
   color: #84CD4E; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .navbar-nav .nav-item {
-      margin-right: 30px; } }
+      margin-right: 30px;
+      background-color: white;} }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .navbar-nav .nav-item {
       margin: 0; } }
@@ -600,7 +335,6 @@ p {
 .btn-search {
   position: absolute;
   width: 25%;
-  color: red;
   background-color: #ffff;
   outline: none;
   border: none;
@@ -625,11 +359,11 @@ p {
 
 #particles-2 {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0; }
+  z-index: -1; }
 
 .footer-content {
   position: relative;
@@ -656,7 +390,7 @@ p {
   .newsletter input {
     min-width: 200px;} }
 
-.btn {
+.btn-footer {
   display: block;
   margin-left: 15px;
   padding: 8px 20px 8px 20px;
@@ -664,14 +398,15 @@ p {
   color: white;
   letter-spacing: 4px;
   font-size: 14px;
-  border-radius: 20px;}
+  border-radius: 20px;
+  border: none;}
   @media only screen and (min-width: 366px) and (max-width: 556px) {
     .btn {
       letter-spacing: 2px;
       font-size: 12px;
       padding: 6px 15px 6px 15px;} }
 
-.btn:hover {
+.btn-footer:hover {
   background-image: linear-gradient(25deg, #84CD4E, #59E9B5);
 }
 
@@ -711,27 +446,8 @@ p {
   letter-spacing: 3px;
 }
 
-/*===== BACK TO TOP =====*/
-.back-to-top {
-  font-size: 20px;
-  color: #fff;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 5px;
-  background: -webkit-linear-gradient(left, #361cc1 0%, #2e82ef 100%);
-  background: -o-linear-gradient(left, #361cc1 0%, #2e82ef 100%);
-  background: linear-gradient(to right, #361cc1 0%, #2e82ef 100%);
-  text-align: center;
-  z-index: 99;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-  display: none; }
-  .back-to-top:hover {
-    color: #fff; }
+df-messenger {
+  --df-messenger-button-titlebar-color: #65D857;
+  --df-messenger-send-icon: #878fac;
+  --df-messenger-user-message: #65D857;
+}

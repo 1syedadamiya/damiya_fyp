@@ -3,17 +3,18 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Bootstrap Multi Step Form</title>
+  <link rel="shortcut icon" href="{% static 'images/logo2.png' %}" type="image/png">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
   <link rel="stylesheet" href="{% static 'css/form.css' %}">
+  <title>Form</title>
 </head>
 
 <body>
   <header>
     <nav class="navbar bg-light shadow justify-content-center">
       <a class="navbar-brand">
-        <img src="{% static 'images/logotext.png' %}" style="width:140px; height:50px;" alt="logo">
+        <img src="{% static 'images/gradientlogo.png' %}" style="width:140px; height:60px;" alt="logo">
       </a>
     </nav>
   </header>
@@ -33,10 +34,19 @@
   </section>
 
   <div class="container">
+      <div class="about-shape-1">
+        <img src="{% static 'images/feedback-shape-1.png' %}" alt="shape">
+      </div>
+      <div class="about-shape-2">
+        <img src="{% static 'images/feedback-shape-2.png' %}" alt="shape">
+      </div>
+      <div class="about-shape-3">
+        <img src="{% static 'images/feedback-shape-2.png' %}" alt="shape">
+      </div>
       <div class="row">
         <div class="col-12 col-lg-8 m-auto">
           <form>
-            <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active">
+            <div class="multisteps-form__panel shadow p-4 bg-white js-active">
               <h3>Personal Info</h3>
               <div class="multisteps-form__content">
                 <div class="form-row mt-4 justify-content-around">

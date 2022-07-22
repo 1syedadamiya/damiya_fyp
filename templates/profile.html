@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>dashboard</title>
+    <title>Profile</title>
+    <link rel="shortcut icon" href="{% static 'images/logo2.png' %}" type="image/png">
 	  <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 	  <!--css3---->
@@ -19,23 +20,23 @@
       <div class="body-overlay"></div>
       <nav id="sidebar">
           <div class="sidebar-header">
-            <h3><img src="{% static 'images/logo.png' %}" class="img-fluid"/><span>Pucho</span></h3>
+            <h3><img src="{% static 'images/logo2.png' %}" class="img-fluid"/><span>Pucho</span></h3>
           </div>
           <ul class="list-unstyled components">
             <li>
-              <a href="home.html" class="dashboard"><i class="material-icons">home</i><span>Home</span></a>
+              <a href="{% url 'home' %}" class="dashboard"><i class="material-icons">home</i><span>Home</span></a>
             </li>
             <li>
-              <a href="recommendation.html" class="dashboard"><i class="material-icons">bar_chart</i><span>Recommendation</span></a>
+              <a href="{% url 'dashboard' %}" class="dashboard"><i class="material-icons">bar_chart</i><span>Recommendation</span></a>
             </li>
             <li class="active">
-              <a href="profile.html" class="dashboard"><i class="material-icons">person_pin</i><span>Profile</span></a>
+              <a href="{% url 'profile' %}" class="dashboard"><i class="material-icons">person_pin</i><span>Profile</span></a>
             </li>
             <li  class="">
-              <a href="saved.html" class="dashboard"><i class="material-icons">link</i><span>Saved Links</span></a>
+              <a href="{% url 'savedlinks' %}" class="dashboard"><i class="material-icons">link</i><span>Saved Links</span></a>
             </li>
             <li  class="">
-              <a href="home.html" class="dashboard"><i class="material-icons">logout</i><span>Logout</span></a>
+              <a href="{% url 'home' %}" class="dashboard"><i class="material-icons">logout</i><span>Logout</span></a>
             </li>
           </ul>
         </nav>
@@ -228,7 +229,7 @@
               </div>
               <div class="col-lg-4 col-md-4 col-sm-11 flex-box-1 profile-detail bg-white shadow">
                 <div class="mx-sm-5">
-                  <img class="profile-img" src="{% static 'image/profile_avatar.png' %}" alt="">
+                  <img class="profile-img" src="{% static 'images/profile_avatar.png' %}" alt="">
                 </div>
                 <div class="user-details text-center">
                   <h5><b>Full Name</b>, Age</h5>
@@ -269,9 +270,10 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="{% static 'js/jquery-3.3.1.slim.min.js' %}"></script>
+   <script src="{% static 'js/popper.min.js' %}"></script>
+   <script src="{% static 'js/bootstrap.min.js' %}"></script>
+   <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
     <script type="text/javascript">
     $(document).ready(function () {
               $('#sidebarCollapse').on('click', function () {

@@ -7,4 +7,6 @@ urlpatterns = [
     path("", include("authentication.urls")),
     path("", include("profiles.urls")),
     path("", include("university.urls")),
+    path("", include("recommendation.urls")),
+    path("", include("feedback.urls")),
 ]
