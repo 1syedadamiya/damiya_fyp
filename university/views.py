@@ -5,8 +5,7 @@ def gcuni(request):
     return render(request, "GCuni.html")
 
 def gcdepts(request,deptname):
-    query = University.objects.filter(university_name__contains='Government College University Lahore') and University.objects.filter(program_abbreviation__contains=deptname)
-    print(query)
+    query = University.objects.filter(university_name__contains='Government College University Lahore',program_abbreviation__contains=deptname)
     for value in query:
         program_name = value.program_name
         eligibilty_criteria = value.eligibilty_criteria
@@ -23,7 +22,7 @@ def ituuni(request):
     return render(request, "ITUuni.html")
 
 def itudepts(request,deptname):
-    query = University.objects.filter(university_name__contains='Information Technology University') and University.objects.filter(program_abbreviation__contains=deptname)
+    query = University.objects.filter(university_name__contains='Information Technology University',program_abbreviation__contains=deptname)
     print(query)
     for value in query:
         program_name = value.program_name
@@ -41,8 +40,7 @@ def puuni(request):
     return render(request, "PUuni.html")
 
 def pundepts(request,deptname):
-    query = University.objects.filter(university_name__contains='Punjab University') and University.objects.filter(program_abbreviation__contains=deptname)
-    print(query)
+    query = University.objects.filter(university_name__contains='Punjab University',program_abbreviation__contains=deptname)
     for value in query:
         program_name = value.program_name
         eligibilty_criteria = value.eligibilty_criteria
@@ -56,8 +54,7 @@ def pundepts(request,deptname):
     return render(request, "PUnewdepartments.html",context)
 
 def puodepts(request,deptname):
-    query = University.objects.filter(university_name__contains='Punjab University') and University.objects.filter(program_abbreviation__contains=deptname)
-    print(query)
+    query = University.objects.filter(university_name__contains='Punjab University',program_abbreviation__contains=deptname)
     for value in query:
         program_name = value.program_name
         eligibilty_criteria = value.eligibilty_criteria
@@ -74,15 +71,12 @@ def kcuni(request):
     return render(request, "KCuni.html")
 
 def kcdepts(request,deptname):
-    query = University.objects.filter(university_name__contains='Kinnard College For Women University') and University.objects.filter(program_abbreviation__contains=deptname)
-    print(query)
-    print(deptname)
+    query = University.objects.filter(university_name__contains="Kinnard College For Women University",program_abbreviation__contains=deptname)
     for value in query:
         program_name = value.program_name
         eligibilty_criteria = value.eligibilty_criteria
         fee_structure = value.fee_structure
         last_merit = value.last_merit
-        print(last_merit)
     context = {'program_name': program_name,
     'eligibilty_criteria': eligibilty_criteria,
     'fee_structure': fee_structure,
@@ -95,7 +89,6 @@ def lcwuuni(request):
 
 def lcwudepts(request,deptname):
     query = University.objects.filter(university_name__contains='Lahore College for Women University') and University.objects.filter(program_abbreviation__contains=deptname)
-    print(query)
     for value in query:
         program_name = value.program_name
         eligibilty_criteria = value.eligibilty_criteria
@@ -112,7 +105,7 @@ def uetuni(request):
     return render(request, "UETuni.html")
 
 def uetdepts(request,deptname):
-    query = University.objects.filter(university_name__contains='University of Engineering and Technology') and University.objects.filter(program_abbreviation__contains=deptname)
+    query = University.objects.filter(university_name__contains='University of Engineering and Technology',program_abbreviation__contains=deptname)
     print(query)
     for value in query:
         program_name = value.program_name
@@ -120,7 +113,9 @@ def uetdepts(request,deptname):
         fee_structure = value.fee_structure
         last_merit = value.last_merit
     context = {'program_name': program_name,
-    'eligibilty_criteria': eligibilty_criteria
+    'eligibilty_criteria': eligibilty_criteria,
+    'fee_structure': fee_structure,
+    'last_merit': last_merit,
     }
     return render(request, "UETdepartments.html",context)
   
@@ -128,7 +123,7 @@ def ueuni(request):
     return render(request, "UEuni.html")
 
 def uedepts(request,deptname):
-    query = University.objects.filter(university_name__contains='University of Education') and University.objects.filter(program_abbreviation__contains=deptname)
+    query = University.objects.filter(university_name__contains='University of Education',program_abbreviation__contains=deptname)
     print(query)
     for value in query:
         program_name = value.program_name

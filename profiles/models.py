@@ -2,13 +2,14 @@ from django.db import models
 from django.contrib.auth.models import User
 
  
-class Profile (models.Model):
+choices = (('F','Female'),('M','Male'))
+class Profile(models.Model):
     full_name = models.CharField(max_length=50)
     email = models.EmailField()
     phone_number = models.IntegerField()
     city = models.CharField(max_length=50)
     address = models.CharField(max_length=50)
-    gender = (('F','Female'),('M','Male'))
+    gender = models.CharField(max_length=15,choices=choices,default="Male")
     age = models.IntegerField()
     religion = models.CharField(max_length=50)
     nationality = models.CharField(max_length=50)
@@ -27,4 +28,7 @@ class Profile (models.Model):
     university_name = models.CharField(max_length=50)
     field_of_interest = models.CharField(max_length=50)
     student = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return str(self.student)
 # Create your models here.
