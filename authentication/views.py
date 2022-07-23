@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 
 
 def login_view(request):
-    msg = None
+    msg = ""
 
     if request.method == "POST":
         username = request.POST.get("username")
@@ -19,8 +19,7 @@ def login_view(request):
             return redirect("/dashboard")
         else:    
             msg = 'Invalid credentials'    
-    else:
-        msg = 'Error validating the form'    
+
 
     return render(request, "login.html", {"msg" : msg})
 

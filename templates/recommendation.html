@@ -1,6 +1,8 @@
+{% extends "chatbot.html" %}
 {%  load static  %}
 <!doctype html>
 <html lang="en">
+{% block content %}
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -32,7 +34,7 @@
               <a href="{% url 'home' %}" class="dashboard"><i class="material-icons">home</i><span>Home</span></a>
             </li>
             <li class="active">
-              <a href="{% url 'dashboard' %}" class="dashboard"><i class="material-icons">bar_chart</i><span>Recommendation</span></a>
+              <a href="{% url 'recommendation' %}" class="dashboard"><i class="material-icons">bar_chart</i><span>Recommendation</span></a>
             </li>
             <li>
               <a href="{% url 'profile' %}" class="dashboard"><i class="material-icons">person_pin</i><span>Profile</span></a>
@@ -129,17 +131,7 @@
             });
 
         });
-
-
-
-
-
-</script>
-
-
-
-
-
+    </script>
   </body>
-
+{% endblock %}
 </html>

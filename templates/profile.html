@@ -27,7 +27,7 @@
               <a href="{% url 'home' %}" class="dashboard"><i class="material-icons">home</i><span>Home</span></a>
             </li>
             <li>
-              <a href="{% url 'dashboard' %}" class="dashboard"><i class="material-icons">bar_chart</i><span>Recommendation</span></a>
+              <a href="{% url 'recommendation' %}" class="dashboard"><i class="material-icons">bar_chart</i><span>Recommendation</span></a>
             </li>
             <li class="active">
               <a href="{% url 'profile' %}" class="dashboard"><i class="material-icons">person_pin</i><span>Profile</span></a>
@@ -78,12 +78,12 @@
                           <div class="form-row mt-4 justify-content-around">
                             <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                               <label for="">Full Name</label>
-                              <input class="multisteps-form__input form-control" type="text" required/>
+                              <input class="multisteps-form__input form-control" type="text" value="{{request.user.username}}" required/>
 
                             </div>
                             <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                               <label for="">Email</label>
-                              <input class="multisteps-form__input form-control" type="text" required/>
+                              <input class="multisteps-form__input form-control" type="text" value="{{request.user.email}}" required/>
 
                             </div>
                           </div>
@@ -232,7 +232,7 @@
                   <img class="profile-img" src="{% static 'images/profile_avatar.png' %}" alt="">
                 </div>
                 <div class="user-details text-center">
-                  <h5><b>Full Name</b>, Age</h5>
+                  <h5><b>{{request.user.username}}</b>, Age</h5>
                   <p><b>Country , City</b></p>
                   <p>Muslim</p>
                   <p class="mt-5 fw-normal"><b>Pre-Engineering</b></p>
