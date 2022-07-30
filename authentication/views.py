@@ -1,8 +1,10 @@
+from django.contrib import auth
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
+from django.views import View
 
 
 def login_view(request):
@@ -16,7 +18,7 @@ def login_view(request):
         user = authenticate(username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect("/dashboard")
+            return redirect("/recommendation")
         else:    
             msg = 'Invalid credentials'    
 
@@ -39,3 +41,8 @@ def register_user(request):
         msg = 'Form is not valid'
 
     return render(request, "register.html", {"msg" : msg, "success" : success })
+
+class LogoutView(View):
+    def get(self, request):
+        auth.logout(request)
+        return redirect('home')

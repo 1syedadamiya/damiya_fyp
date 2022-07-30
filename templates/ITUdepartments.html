@@ -13,25 +13,37 @@
   </head>
   <body>
     <main>
-       <h2 class="line mt-4 ml-5">{{program_name}}</h2>
-       <h2 class="text-center mt-4">Eligibility Criteria</h2>
-       <section  class="section">
-         <div class="container p-4 descrp_box">
-           <p class="text-justified">{{eligibilty_criteria}}</p>
-       </div>
-       </section>
-       <h2 class="text-center mt-4">Fee Sturcture</h2>
-       <section  class="section">
-         <div class="container p-4 descrp_box">
-           <p class="text-justified">{{fee_structure}}</p>
-       </div>
-       </section>
-       <h2 class="text-center mt-4">Last Year Merit</h2>
-       <section  class="section">
-         <div class="container p-4 descrp_box">
-           <p class="text-justified">{{last_merit}}</p>
-       </div>
-       </section>
+        <div class="container">
+            <h2 class="line mt-5">{{program_name}}</h2>
+            <h2 class="text-center mt-4">Eligibility Criteria</h2>
+            <section  class="section">
+                <div class="container p-4 descrp_box">
+                    <p class="text-justified">{{eligibilty_criteria}}</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <div class="row">
+          <div class="col-6">
+            <h2 class="text-center mt-4">Fee Sturcture</h2>
+            <section  class="section">
+                <div class="container p-4 descrp_box">
+                    <p class="text-center">{{fee_structure}}</p>
+                </div>
+            </section>
+          </div>
+          <div class="col-6">
+             <h2 class="text-center mt-4">Last Year Merit</h2>
+             <section  class="section">
+                  <div class="container p-4 descrp_box">
+                      <p class="text-center">{{last_merit}}</p>
+                  </div>
+             </section>
+          </div>
+        </div>
+        </div>
+
     </main>
   </body>
 {% endblock %}

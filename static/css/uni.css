@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+main {
+  margin-top: 60px;
+}
+
 .descrp_box {
   border-radius:12px;
   margin-top: 20px;
@@ -32,4 +36,8 @@
   margin-left: 80px;
   margin-right: 80px;
   background-color: #D8D8D8;
+}
+
+.section2 {
+  margin-bottom: 40px;
 }

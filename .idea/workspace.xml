@@ -2,54 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13f7c9a3-e473-4bda-b93d-56d3a3e1ef38" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fyp_pucho/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/fyp_pucho/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/GC[CS].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/GC[EE].html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/field.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/field.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/uni.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/uni.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/GCdepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/GCdepartments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/GCuni.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/GCuni.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ITU[CE].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ITU[CS].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ITU[EE].html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ITUdepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ITUdepartments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/ITUuni.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ITUuni.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/KC[CS].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/KCuni.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/KCuni.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/LCWU[AE].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/LCWU[CRP].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/LCWU[CS].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/LCWU[EE].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/LCWU[SE].html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/KCdepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/KCdepartments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/LCWUdepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/LCWUdepartments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/LCWUuni.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/LCWUuni.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUnew[BBIT].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUnew[CE].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUnew[CS].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUnew[DS].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUnew[EE].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUnew[Enr.E].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUnew[IEM].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUnew[IT].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUnew[MME].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUnew[PE].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUnew[SE].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUnew[TE].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUold[CS].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUold[DS].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUold[IT].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUold[SE].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PUuni.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/PUuni.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/UET[CS] copy.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/UETdepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/UETdepartments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/UETuni.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/UETuni.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/UE[CS].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/UE[IT].html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/UEdepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/UEdepartments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/UEuni.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/UEuni.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/recommendation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recommendation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/university/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/saved.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/saved.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,16 +98,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

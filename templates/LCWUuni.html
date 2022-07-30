@@ -2,6 +2,7 @@
 {%  load static  %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+{% block content %}
   <head>
     <meta charset="utf-8">
     <title>Lahore College for Women University</title>
@@ -12,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-  {% block content %}
+
     <main>
       <section class="container-fluid p-0 bg-dark">
         <img src="{% static './images/LCWUuni.jpg' %}" class="col-md-12 p-0 simg-fluid" alt="">
@@ -52,17 +53,18 @@
                 Faculty of Engineering and Technology
               </button>
               <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="LCWU[EE].html">BS Electrical Engineering</a></li>
-                  <li><a class="dropdown-item" href="LCWU[CS].html">BS Computer Science</a></li>
-                  <li><a class="dropdown-item" href="LCWU[SE].html">BS Software Engineering</a></li>
-                  <li><a class="dropdown-item" href="LCWU[CRP].html">BS City and Regional Planning</a></li>
-                  <li><a class="dropdown-item" href="LCWU[AE].html">BS Architecture Engineering</a></li>
+                  <li><a class="dropdown-item" href="EE">BS Electrical Engineering</a></li>
+                  <li><a class="dropdown-item" href="CS">BS Computer Science</a></li>
+                  <li><a class="dropdown-item" href="SE">BS Software Engineering</a></li>
+                  <li><a class="dropdown-item" href="CRP">BS City and Regional Planning</a></li>
+                  <li><a class="dropdown-item" href="AE">BS Architecture Engineering</a></li>
               </ul>
               </div>
           </div>
         </section>
          </div>
       </main>
-  {% endblock %}
+
   </body>
+{% endblock %}
 </html>
