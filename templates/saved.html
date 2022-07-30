@@ -78,9 +78,10 @@
                       </div>
                       <table class="table table-striped table-condensed">
                         <tbody>
+                          {% for value in query %}
                           <tr>
                             <td>
-                              <a href="#">Bs Computer Science</a>
+                              <a href="{{value.item_page}}">{{value.item_name}}</a>
                             </td>
                             <td class="table-icon">
                               <button type="button" name="button" class="btn ">
@@ -93,36 +94,7 @@
                               </button>
                             </td>
                           </tr>
-                          <tr>
-                            <td>
-                              <a href="#">Bs Computer Science</a>
-                            </td>
-                            <td>
-                              <button type="button" name="button" class="btn btn-eye">
-                                <i class="material-icons">visibility</i>
-                              </button>
-                            </td>
-                            <td>
-                              <button type="button" name="button" class="btn btn-del">
-                                <i class="material-icons">delete</i>
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">Bs Computer Science</a>
-                            </td>
-                            <td>
-                              <button type="button" name="button" class="btn">
-                                <i class="material-icons">visibility</i>
-                              </button>
-                            </td>
-                            <td>
-                              <button type="button" name="button" class="btn">
-                                <i class="material-icons">delete</i>
-                              </button>
-                            </td>
-                          </tr>
+                          {% endfor %}
                         </tbody>
                       </table>
                     </div>

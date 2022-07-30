@@ -1,10 +1,17 @@
 from django.shortcuts import render
-from .models import University
+from .models import University,SavedItems,UniversitiesCount
 
 def gcuni(request):
+    uni_name = request.path.split('/')[1].upper()
+    query = UniversitiesCount.objects.get(university_name__contains=uni_name)
+    query.count = query.count + 1
+    query.save()
     return render(request, "GCuni.html")
 
 def gcdepts(request,deptname):
+    page_url = str(request._current_scheme_host + request.path)
+    page_name = ((page_url.split('/')[3]).upper()+ ' '+ page_url.split('/')[4])
+    print(page_name)
     query = University.objects.filter(university_name__contains='Government College University Lahore',program_abbreviation__contains=deptname)
     for value in query:
         program_name = value.program_name
@@ -16,6 +23,14 @@ def gcdepts(request,deptname):
     'fee_structure': fee_structure,
     'last_merit': last_merit,
     }
+    query = SavedItems.objects.filter(item_page__contains=page_url,user=request.user)
+    if query:
+        context['saved'] = True
+    if request.method == "POST":
+        print("post request")
+        query = SavedItems(user=request.user,item_page=page_url,item_name=page_name)
+        query.save()
+        return render(request, "GCdepartments.html",context)
     return render(request, "GCdepartments.html",context)
   
 def ituuni(request):

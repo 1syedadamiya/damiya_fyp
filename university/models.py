@@ -11,4 +11,21 @@ class University (models.Model):
     
     def __str__(self):
             return self.university_name + " " + self.program_name
+
+
+
+class SavedItems(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    item_page = models.CharField(max_length=100)
+    item_name = models.CharField(max_length=100,blank=True,null=True,default=None)
+
+    def __str__(self):
+        return self.user.username + " " + self.item_page
+
+class UniversitiesCount(models.Model):
+    university_name = models.CharField(max_length=150)
+    count = models.IntegerField()
+
+    def __str__(self):
+        return self.university_name + " " + str(self.count)
 # Create your models here.

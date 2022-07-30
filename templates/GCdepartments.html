@@ -21,9 +21,18 @@
                             <h2 class="line mt-5">{{program_name}}</h2>
                         </div>
                         <div>
-                            <button type="button" name="button" class="btn">
+                        <form method="post" action="" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {% if saved %}
+                            <button type="button" name="button" class="btn" disabled>
+                                Already Saved
+                            </button>
+                            {% else %}
+                            <button type="submit" name="button" class="btn">
                                 save
                             </button>
+                            {% endif %}
+                        </form>
                         </div>
                     </div>
                 </div>

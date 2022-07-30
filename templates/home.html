@@ -52,7 +52,11 @@
                   <div class="header-hero-content text-center">
                       <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Best University Recommendation</h3>
                       <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Kickstart Your Academic Hunt</h2>
-                      <a href="{% url 'login' %}" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Find Now</a>
+                      {% if user.is_authenticated %}
+                      <a href="{% url 'recommendation' %}" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Find Now</a>
+                        {% else %}
+                        <a href="{% url 'login' %}" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Register Now</a>
+                        {% endif %}
                   </div> <!-- header hero content -->
               </div>
           </div> <!-- row -->
