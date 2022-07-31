@@ -11,7 +11,7 @@ def gcuni(request):
 def gcdepts(request,deptname):
     page_url = str(request._current_scheme_host + request.path)
     page_name = ((page_url.split('/')[3]).upper()+ ' '+ page_url.split('/')[4])
-    print(page_name)
+
     query = University.objects.filter(university_name__contains='Government College University Lahore',program_abbreviation__contains=deptname)
     for value in query:
         program_name = value.program_name
@@ -37,6 +37,9 @@ def ituuni(request):
     return render(request, "ITUuni.html")
 
 def itudepts(request,deptname):
+    page_url = str(request._current_scheme_host + request.path)
+    page_name = ((page_url.split('/')[3]).upper() + ' ' + page_url.split('/')[4])
+
     query = University.objects.filter(university_name__contains='Information Technology University',program_abbreviation__contains=deptname)
     print(query)
     for value in query:
@@ -49,12 +52,22 @@ def itudepts(request,deptname):
     'fee_structure': fee_structure,
     'last_merit': last_merit,
     }
+    query = SavedItems.objects.filter(item_page__contains=page_url,user=request.user)
+    if query:
+        context['saved'] = True
+    if request.method == "POST":
+        query = SavedItems(user=request.user,item_page=page_url,item_name=page_name)
+        query.save()
+        return render(request, "ITUdepartments.html",context)
     return render(request, "ITUdepartments.html",context)
   
 def puuni(request):
     return render(request, "PUuni.html")
 
 def pundepts(request,deptname):
+    page_url = str(request._current_scheme_host + request.path)
+    page_name = ((page_url.split('/')[3]).upper() + ' ' + page_url.split('/')[4])
+
     query = University.objects.filter(university_name__contains='Punjab University',program_abbreviation__contains=deptname)
     for value in query:
         program_name = value.program_name
@@ -66,9 +79,19 @@ def pundepts(request,deptname):
     'fee_structure': fee_structure,
     'last_merit': last_merit,
     }
+    query = SavedItems.objects.filter(item_page__contains=page_url,user=request.user)
+    if query:
+        context['saved'] = True
+    if request.method == "POST":
+        query = SavedItems(user=request.user,item_page=page_url,item_name=page_name)
+        query.save()
+        return render(request, "PUnewdepartments.html",context)
     return render(request, "PUnewdepartments.html",context)
 
 def puodepts(request,deptname):
+    page_url = str(request._current_scheme_host + request.path)
+    page_name = ((page_url.split('/')[3]).upper() + ' ' + page_url.split('/')[4])
+
     query = University.objects.filter(university_name__contains='Punjab University',program_abbreviation__contains=deptname)
     for value in query:
         program_name = value.program_name
@@ -80,12 +103,22 @@ def puodepts(request,deptname):
     'fee_structure': fee_structure,
     'last_merit': last_merit,
     }
+    query = SavedItems.objects.filter(item_page__contains=page_url,user=request.user)
+    if query:
+        context['saved'] = True
+    if request.method == "POST":
+        query = SavedItems(user=request.user,item_page=page_url,item_name=page_name)
+        query.save()
+        return render(request, "PUolddepartments.html",context)
     return render(request, "PUolddepartments.html",context)
 
 def kcuni(request):
     return render(request, "KCuni.html")
 
 def kcdepts(request,deptname):
+    page_url = str(request._current_scheme_host + request.path)
+    page_name = ((page_url.split('/')[3]).upper() + ' ' + page_url.split('/')[4])
+
     query = University.objects.filter(university_name__contains="Kinnard College For Women University",program_abbreviation__contains=deptname)
     for value in query:
         program_name = value.program_name
@@ -97,12 +130,25 @@ def kcdepts(request,deptname):
     'fee_structure': fee_structure,
     'last_merit': last_merit,
     }
+    query = SavedItems.objects.filter(item_page__contains=page_url,user=request.user)
+    if query:
+        context['saved'] = True
+    if request.method == "POST":
+        query = SavedItems(user=request.user,item_page=page_url,item_name=page_name)
+        query.save()
+        return render(request, "KCdepartments.html",context)
     return render(request, "KCdepartments.html",context)
   
 def lcwuuni(request):
     return render(request, "LCWUuni.html")
 
 def lcwudepts(request,deptname):
+    page_url = str(request._current_scheme_host + request.path)
+    page_name = ((page_url.split('/')[3]).upper() + ' ' + page_url.split('/')[4])
+
+    page_url = str(request._current_scheme_host + request.path)
+    page_name = ((page_url.split('/')[3]).upper() + ' ' + page_url.split('/')[4])
+
     query = University.objects.filter(university_name__contains='Lahore College for Women University') and University.objects.filter(program_abbreviation__contains=deptname)
     for value in query:
         program_name = value.program_name
@@ -114,12 +160,22 @@ def lcwudepts(request,deptname):
     'fee_structure': fee_structure,
     'last_merit': last_merit,
     }
+    query = SavedItems.objects.filter(item_page__contains=page_url,user=request.user)
+    if query:
+        context['saved'] = True
+    if request.method == "POST":
+        query = SavedItems(user=request.user,item_page=page_url,item_name=page_name)
+        query.save()
+        return render(request, "LCWUdepartments.html",context)
     return render(request, "LCWUdepartments.html",context)
 
 def uetuni(request):
     return render(request, "UETuni.html")
 
 def uetdepts(request,deptname):
+    page_url = str(request._current_scheme_host + request.path)
+    page_name = ((page_url.split('/')[3]).upper() + ' ' + page_url.split('/')[4])
+
     query = University.objects.filter(university_name__contains='University of Engineering and Technology',program_abbreviation__contains=deptname)
     print(query)
     for value in query:
@@ -132,12 +188,22 @@ def uetdepts(request,deptname):
     'fee_structure': fee_structure,
     'last_merit': last_merit,
     }
+    query = SavedItems.objects.filter(item_page__contains=page_url,user=request.user)
+    if query:
+        context['saved'] = True
+    if request.method == "POST":
+        query = SavedItems(user=request.user,item_page=page_url,item_name=page_name)
+        query.save()
+        return render(request, "UETdepartments.html",context)
     return render(request, "UETdepartments.html",context)
   
 def ueuni(request):
     return render(request, "UEuni.html")
 
 def uedepts(request,deptname):
+    page_url = str(request._current_scheme_host + request.path)
+    page_name = ((page_url.split('/')[3]).upper() + ' ' + page_url.split('/')[4])
+
     query = University.objects.filter(university_name__contains='University of Education',program_abbreviation__contains=deptname)
     print(query)
     for value in query:
@@ -150,4 +216,11 @@ def uedepts(request,deptname):
     'fee_structure': fee_structure,
     'last_merit': last_merit,
     }
+    query = SavedItems.objects.filter(item_page__contains=page_url,user=request.user)
+    if query:
+        context['saved'] = True
+    if request.method == "POST":
+        query = SavedItems(user=request.user,item_page=page_url,item_name=page_name)
+        query.save()
+        return render(request, "UEdepartments.html",context)
     return render(request, "UEdepartments.html",context)

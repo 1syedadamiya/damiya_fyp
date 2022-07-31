@@ -3,28 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="13f7c9a3-e473-4bda-b93d-56d3a3e1ef38" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/field.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/field.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/uni.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/uni.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommendation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recommendation/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/GCdepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/GCdepartments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/GCuni.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/GCuni.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/ITUdepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ITUdepartments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ITUuni.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ITUuni.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/KCdepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/KCdepartments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/LCWUdepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/LCWUdepartments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/LCWUuni.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/LCWUuni.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/PUnewdepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/PUnewdepartments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/PUolddepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/PUolddepartments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/UETdepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/UETdepartments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/UETuni.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/UETuni.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/UEdepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/UEdepartments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/UEuni.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/UEuni.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/recommendation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recommendation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/saved.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/saved.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/university/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/university/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

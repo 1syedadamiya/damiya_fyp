@@ -36,7 +36,7 @@
               <a href="{% url 'savedlinks' %}" class="dashboard"><i class="material-icons">link</i><span>Saved Links</span></a>
             </li>
             <li  class="">
-              <a href="{% url 'home' %}" class="dashboard"><i class="material-icons">logout</i><span>Logout</span></a>
+              <a href="{% url 'logout' %}?next=/home" class="dashboard"><i class="material-icons">logout</i><span>Logout</span></a>
             </li>
           </ul>
         </nav>
@@ -78,67 +78,67 @@
                           <div class="form-row mt-4 justify-content-around">
                             <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                               <label for="">Full Name</label>
-                              <input class="multisteps-form__input form-control" type="text" value="{{query.full_name}}" required/>
+                              <input class="multisteps-form__input form-control" type="text" value="{{query.full_name}}" disabled/>
 
                             </div>
                             <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                               <label for="">Email</label>
-                              <input class="multisteps-form__input form-control" type="text" value="{{query.email}}" required/>
+                              <input class="multisteps-form__input form-control" type="text" value="{{query.email}}" disabled/>
 
                             </div>
                           </div>
                           <div class="form-row mt-4 justify-content-around">
                             <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                               <label for="">Phone No.</label>
-                              <input class="multisteps-form__input form-control" type="text" value="{{query.phone_number}}" required/>
+                              <input class="multisteps-form__input form-control" type="text" value="{{query.phone_number}}" disabled/>
 
                             </div>
                             <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                               <label for="">City</label>
-                              <input class="multisteps-form__input form-control" type="text" value="{{query.city}}" required/>
+                              <input class="multisteps-form__input form-control" type="text" value="{{query.city}}" disabled/>
 
                             </div>
                           </div>
                           <div class="form-row mt-4 justify-content-around">
                             <div class="col-lg-11 col-md-11 col-sm-12 mt-4 mt-sm-0">
                               <label for="">Address</label>
-                              <input class="multisteps-form__input form-control" type="text" value="{{query.address}}" required/>
+                              <input class="multisteps-form__input form-control" type="text" value="{{query.address}}" disabled/>
 
                             </div>
                           </div>
                           <div class="form-row mt-4 justify-content-around">
                             <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                               <label for="">Gender</label>
-                              <input class="multisteps-form__input form-control" type="text" value="{{query.gender}}" required/>
+                              <input class="multisteps-form__input form-control" type="text" value="{{query.gender}}" disabled/>
 
                             </div>
                             <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                               <label for="">Age</label>
-                              <input class="multisteps-form__input form-control" type="text" value="{{query.age}}" required/>
+                              <input class="multisteps-form__input form-control" type="text" value="{{query.age}}" disabled/>
 
                             </div>
                           </div>
                           <div class="form-row mt-4 justify-content-around">
                               <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                                 <label for="">Religion</label>
-                                <input class="multisteps-form__input form-control" type="text" value="{{query.religion}}" required/>
+                                <input class="multisteps-form__input form-control" type="text" value="{{query.religion}}" disabled/>
 
                               </div>
                               <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                                 <label for="">Nationality</label>
-                                <input class="multisteps-form__input form-control" type="text" value="{{query.nationality}}" required/>
+                                <input class="multisteps-form__input form-control" type="text" value="{{query.nationality}}" disabled/>
 
                               </div>
                             </div>
                           <div class="form-row mt-4 justify-content-around">
                             <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                               <label for="">Guardian's Name</label>
-                              <input class="multisteps-form__input form-control" type="text" value="{{query.gaurdian_name}}" />
+                              <input class="multisteps-form__input form-control" type="text" value="{{query.gaurdian_name}}" disabled/>
 
                             </div>
                             <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                               <label for="">Guardian's Income</label>
-                              <input class="multisteps-form__input form-control" type="text" value="{{query.gaurdian_income}}" required/>
+                              <input class="multisteps-form__input form-control" type="text" value="{{query.gaurdian_income}}" disabled/>
 
                             </div>
                           </div>
@@ -151,31 +151,31 @@
                             <div class="form-row mt-4 justify-content-around">
                               <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                                 <label for="">Name of School</label>
-                                <input class="multisteps-form__input form-control" type="text" value="{{query.name_of_school}}" required/>
+                                <input class="multisteps-form__input form-control" type="text" value="{{query.name_of_school}}" disabled/>
 
                               </div>
                               <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                                 <label for="">Matric Marks</label>
-                                <input class="multisteps-form__input form-control" type="text" value="{{query.matric_marks}}" required/>
+                                <input class="multisteps-form__input form-control" type="text" value="{{query.matric_marks}}" disabled/>
 
                               </div>
                             </div>
                             <div class="form-row mt-4 justify-content-around">
                               <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                                 <label for="">Year</label>
-                                <input class="multisteps-form__input form-control" type="text" value="{{query.year_of_matric}}" required/>
+                                <input class="multisteps-form__input form-control" type="text" value="{{query.year_of_matric}}" disabled/>
 
                               </div>
                               <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                                 <label for="">Grade</label>
-                                <input class="multisteps-form__input form-control" type="text" value="{{query.matric_grade}}" required/>
+                                <input class="multisteps-form__input form-control" type="text" value="{{query.matric_grade}}" disabled/>
 
                               </div>
                             </div>
                             <div class="form-row mt-4 justify-content-around">
                               <div class="col-lg-11 col-md-11 col-sm-12 mt-4 mt-sm-0">
                                 <label for="">Board Name</label>
-                                <input class="multisteps-form__input form-control" type="text" value="{{query.matric_board}}" required/>
+                                <input class="multisteps-form__input form-control" type="text" value="{{query.matric_board}}" disabled/>
 
                               </div>
                             </div>
@@ -187,38 +187,53 @@
                             <div class="form-row mt-4 justify-content-around">
                               <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                                 <label for="">Name of College</label>
-                                <input class="multisteps-form__input form-control" type="text" value="{{query.name_of_college}}" required/>
+                                <input class="multisteps-form__input form-control" type="text" value="{{query.name_of_college}}" disabled/>
 
                               </div>
                               <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                                 <label for="">Inter Marks</label>
-                                <input class="multisteps-form__input form-control" type="text" value="{{query.inter_marks}}" required/>
+                                <input class="multisteps-form__input form-control" type="text" value="{{query.inter_marks}}" disabled/>
 
                               </div>
                             </div>
                             <div class="form-row mt-4 justify-content-around">
                               <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                                 <label for="">Year</label>
-                                <input class="multisteps-form__input form-control" type="text" value="{{query.year_of_inter}}" required/>
+                                <input class="multisteps-form__input form-control" type="text" value="{{query.year_of_inter}}" disabled/>
 
                               </div>
                               <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                                 <label for="">Grade</label>
-                                <input class="multisteps-form__input form-control" type="text" value="{{query.inter_grade}}" required/>
+                                <input class="multisteps-form__input form-control" type="text" value="{{query.inter_grade}}" disabled/>
 
                               </div>
                             </div>
                             <div class="form-row mt-4 justify-content-around">
                               <div class="col-lg-11 col-md-11 col-sm-12 mt-4 mt-sm-0">
                                 <label for="">Board Name</label>
-                                <input class="multisteps-form__input form-control" type="text" value="{{query.inter_board}}" required/>
+                                <input class="multisteps-form__input form-control" type="text" value="{{query.inter_board}}" disabled/>
+                              </div>
+                            </div>
+                            <div class="row  justify-content-around">
+                              <div class="multisteps-form__subtitle text-muted p-2 mt-4 col-lg-11 col-md-11 col-sm-11">
+                                <h5 class="pl-2 pt-1">Your Interest:</h5>
+                              </div>
+                            </div>
+                            <div class="form-row mt-4 justify-content-around">
+                              <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+                                <label for="">University Name</label>
+                                <input class="multisteps-form__input form-control" type="text" value="{{query.university_name}}" disabled/>
 
                               </div>
+                              <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
+                                <label for="">Field of Interest</label>
+                                <input class="multisteps-form__input form-control" type="text" value="{{query.field_of_interest}}" disabled/>
+
                               <div class="col-lg-11">
                                 <span class="text-white">a</span>
                                 <span class="text-white">a</span>
                               </div>
-
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -235,7 +250,7 @@
                   <h5><b>{{query.full_name}}</b>, {{query.age}}</h5>
                   <p><b>Pakistan , {{query.city}}</b></p>
                   <p>{{query.religion}}</p>
-                  <p class="mt-5 fw-normal"><b>{{query.group}}</b></p>
+                  <p class="mt-5 fw-normal"><b>{{query.address}}</b></p>
                   <p class="mb-5">{{query.name_of_college}}</p>
                 </div>
               </div>

@@ -42,7 +42,7 @@
               <a href="{% url 'savedlinks' %}" class="dashboard"><i class="material-icons">link</i><span>Saved Links</span></a>
             </li>
             <li  class="">
-              <a href="{% url 'home' %}" class="dashboard"><i class="material-icons">logout</i><span>Logout</span></a>
+              <a href="{% url 'logout' %}?next=/home" class="dashboard"><i class="material-icons">logout</i><span>Logout</span></a>
             </li>
           </ul>
         </nav>
@@ -84,14 +84,19 @@
                               <a href="{{value.item_page}}">{{value.item_name}}</a>
                             </td>
                             <td class="table-icon">
-                              <button type="button" name="button" class="btn ">
-                                <i class="material-icons">visibility</i>
-                              </button>
+                              <a href="{{value.item_page}}">
+                                <button type="button" name="button" class="btn ">
+                                  <i class="material-icons">visibility</i>
+                                </button>
+                              </a>
                             </td>
                             <td class="table-icon">
-                              <button type="button" name="button" class="btn">
-                                <i class="material-icons">delete</i>
-                              </button>
+                              <form method="post" action="" enctype="multipart/form-data">
+                              {% csrf_token %}
+                                <button type="submit" name="button" class="btn">
+                                  <i class="material-icons">delete</i>
+                                </button>
+                              </form>
                             </td>
                           </tr>
                           {% endfor %}

@@ -67,11 +67,29 @@ def edit(request):
         inter_grade = request.POST.get("inter_grade")
         inter_board = request.POST.get("inter_board")
         university_name = request.POST.get("university_name")
-    
-    query.full_name = full_name
-    query.email = email
-    query.phone_number = phone_number
-    query.address = address
-    query.save()
+
+        query.full_name = full_name
+        query.email = email
+        query.phone_number = phone_number
+        query.address = address
+        query.city = city
+        query.gender = gender
+        query.age = age
+        query.religion = religion
+        query.nationality = nationality
+        query.gaurdian_name = gaurdian_name
+        query.gaurdian_income = gaurdian_income
+        query.name_of_school = name_of_school
+        query.matric_marks = matric_marks
+        query.year_of_matric = year_of_matric
+        query.matric_grade = matric_grade
+        query.matric_board = matric_board
+        query.name_of_college = name_of_college
+        query.inter_marks = inter_marks
+        query.year_of_inter = year_of_inter
+        query.inter_grade = inter_grade
+        query.inter_board = inter_board
+        query.university_name = university_name
+        query.save()
     return render(request, "edit.html",{"query":query})
 

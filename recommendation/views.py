@@ -1,3 +1,4 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from university.models import SavedItems,University,UniversitiesCount
 from profiles.models import Profile
@@ -20,6 +21,9 @@ def recommendation(request):
 
 def savedlinks(request):
     query = SavedItems.objects.filter(user=request.user)
+    # if request.method == 'POST':
+    #     query.delete()
+    #     return HttpResponseRedirect ("/")
     return render(request, "saved.html",context={'query':query})
 
 

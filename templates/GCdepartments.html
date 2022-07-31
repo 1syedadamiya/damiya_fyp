@@ -16,19 +16,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="d-flex align-items-end justify-content-between">
+                    <div class="d-flex align-items-center justify-content-between">
                         <div>
-                            <h2 class="line mt-5">{{program_name}}</h2>
+                            <h2 class="line">{{program_name}}</h2>
                         </div>
                         <div>
                         <form method="post" action="" enctype="multipart/form-data">
                             {% csrf_token %}
                             {% if saved %}
-                            <button type="button" name="button" class="btn" disabled>
+                            <button type="button" name="button" class="btn text-white" disabled>
                                 Already Saved
                             </button>
                             {% else %}
-                            <button type="submit" name="button" class="btn">
+                            <button type="submit" name="button" class="btn text-white">
                                 save
                             </button>
                             {% endif %}
@@ -37,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <h2 class="text-center mt-4">Eligibility Criteria</h2>
+            <h2 class="text-center mt-5">Eligibility Criteria</h2>
                     <section  class="section">
                         <div class="container p-4 descrp_box">
                             <p class="text-justified">{{eligibilty_criteria}}</p>
