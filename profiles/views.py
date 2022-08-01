@@ -26,7 +26,7 @@ def form(request):
         inter_board = request.POST.get("inter_board")
         university_name = request.POST.get("university_name")
         field_of_interest = request.POST.get("field_of_interest")
-        print(full_name,email,phone_number,address,city,gender)
+        print(university_name)
         query = Profile(full_name=full_name, email=email, phone_number=phone_number, address=address, city=city, gender=gender, age=age,religion=religion, nationality=nationality, gaurdian_name=gaurdian_name, gaurdian_income=gaurdian_income, name_of_school=name_of_school, matric_marks=matric_marks, year_of_matric=year_of_matric, matric_grade=matric_grade, matric_board=matric_board, name_of_college=name_of_college, inter_marks=inter_marks, year_of_inter=year_of_inter, inter_grade=inter_grade,  inter_board=inter_board, university_name=university_name, field_of_interest=field_of_interest,student=request.user)
         query.save()
         return redirect("/recommendation")
