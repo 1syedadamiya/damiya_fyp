@@ -6,7 +6,7 @@ def gcuni(request):
     query = UniversitiesCount.objects.get(university_name__contains=uni_name)
     query.count = query.count + 1
     query.save()
-    return render(request, "GCuni.html")
+    return render(request, "GCuni.html", context={'query':query,})
 
 def gcdepts(request,deptname):
     page_url = str(request._current_scheme_host + request.path)
@@ -34,6 +34,10 @@ def gcdepts(request,deptname):
     return render(request, "GCdepartments.html",context)
   
 def ituuni(request):
+    uni_name = request.path.split('/')[1].upper()
+    query = UniversitiesCount.objects.get(university_name__contains=uni_name)
+    query.count = query.count + 1
+    query.save()
     return render(request, "ITUuni.html")
 
 def itudepts(request,deptname):
@@ -62,6 +66,10 @@ def itudepts(request,deptname):
     return render(request, "ITUdepartments.html",context)
   
 def puuni(request):
+    uni_name = request.path.split('/')[1].upper()
+    query = UniversitiesCount.objects.get(university_name__contains=uni_name)
+    query.count = query.count + 1
+    query.save()
     return render(request, "PUuni.html")
 
 def pundepts(request,deptname):
@@ -113,6 +121,10 @@ def puodepts(request,deptname):
     return render(request, "PUolddepartments.html",context)
 
 def kcuni(request):
+    uni_name = request.path.split('/')[1].upper()
+    query = UniversitiesCount.objects.get(university_name__contains=uni_name)
+    query.count = query.count + 1
+    query.save()
     return render(request, "KCuni.html")
 
 def kcdepts(request,deptname):
@@ -140,6 +152,10 @@ def kcdepts(request,deptname):
     return render(request, "KCdepartments.html",context)
   
 def lcwuuni(request):
+    uni_name = request.path.split('/')[1].upper()
+    query = UniversitiesCount.objects.get(university_name__contains=uni_name)
+    query.count = query.count + 1
+    query.save()
     return render(request, "LCWUuni.html")
 
 def lcwudepts(request,deptname):
@@ -170,6 +186,10 @@ def lcwudepts(request,deptname):
     return render(request, "LCWUdepartments.html",context)
 
 def uetuni(request):
+    uni_name = request.path.split('/')[1].upper()
+    query = UniversitiesCount.objects.get(university_name__contains=uni_name)
+    query.count = query.count + 1
+    query.save()
     return render(request, "UETuni.html")
 
 def uetdepts(request,deptname):
@@ -198,6 +218,10 @@ def uetdepts(request,deptname):
     return render(request, "UETdepartments.html",context)
   
 def ueuni(request):
+    uni_name = request.path.split('/')[1].upper()
+    query = UniversitiesCount.objects.get(university_name__contains=uni_name)
+    query.count = query.count + 1
+    query.save()
     return render(request, "UEuni.html")
 
 def uedepts(request,deptname):

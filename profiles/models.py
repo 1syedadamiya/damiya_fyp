@@ -3,7 +3,8 @@ from django.contrib.auth.models import User
 
  
 choices = (('F','Female'),('M','Male'))
-dept_choices = (('CS','CS'),('EE','EE'),('SE','SE'),('ME','ME'))
+uni_choices = (('University of Engineering and Technology','University of Engineering and Technology'),('Government College University Lahore','Government College University Lahore'),('Lahore College for Women University','Lahore College for Women University'),('Information Technology University','Information Technology University'),('Kinnard College For Women University','Kinnard College For Women University'),('University of Education','University of Education'),('University of Punjab','University of Punjab'))
+dept_choices = (('SE','SE'),('IT','IT'),('CE','CE'),('CS','CS'),('A','A'),('AED','AED'),('CRP','CRP'),('EER','EER'),('CE','CE'),('IME','IME'),('ME','ME'),('MCE','MCE'),('MINE','MINE'),('MME','MME'),('PGE','PGE'),('PID','PID'),('PPE','PPE'),('TEM','TEM'),('CHE','CHE'),('WRE','WRE'))
 class Profile(models.Model):
     full_name = models.CharField(max_length=50)
     email = models.EmailField()
@@ -26,8 +27,8 @@ class Profile(models.Model):
     year_of_inter = models.IntegerField()
     inter_grade = models.CharField(max_length=10)
     inter_board = models.CharField(max_length=50)
-    university_name = models.CharField(max_length=50)
-    field_of_interest = models.CharField(max_length=50)
+    university_name = models.CharField(max_length=50,choices=uni_choices,default="None")
+    field_of_interest = models.CharField(max_length=50,choices=dept_choices,default="None")
     student = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):

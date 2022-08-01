@@ -24,13 +24,11 @@
                             <form method="post" action="" enctype="multipart/form-data">
                                 {% csrf_token %}
                                 {% if saved %}
-                                <button type="button" name="button" class="btn text-danger" disabled>
-                                    <i class="material-icons">favorite</i>
+                                <button type="button" name="button" class="btn text-white" disabled>
                                     Already Saved
                                 </button>
                                 {% else %}
                                 <button type="submit" name="button" class="btn text-white">
-                                    <i class="material-icons">favorite</i>
                                     save
                                 </button>
                                 {% endif %}
