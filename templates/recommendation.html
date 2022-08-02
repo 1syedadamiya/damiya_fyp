@@ -87,17 +87,18 @@
 <!--                            </div>-->
 <!--                          </div>-->
 <!--                        </div>-->
-                        <div class="col-sm-6">
                           {% for value in final_query5 %}
-                          <div class="card bg-light rounded" >
-                            <div class="card-body" style="background-color:#87E26B;">
-                              <h5 class="card-title">University In Budget</h5>
-                              <p class="card-text">{{value.university_name}}</p>
-                              <p class="card-text">{{value.fee_structure}}</p>
-                            </div>
-                          </div>
+                          <div class="col-sm-4">
+                              <div class="card rounded" style="background-color:#87E26B;">
+                                <div class="card-body">
+                                  <h5 class="card-title">University In Budget</h5>
+                                  <p class="card-text">{{value.university_name}}</p>
+                                  <p class="card-text">{{value.fee_structure}}</p>
+                                </div>
+                              </div>
+                         </div>
                           {% endfor %}
-                        </div>
+
                       </div>
                       <div class="mt-3">
                         <h5>According to Your Interest and Merit</h5>

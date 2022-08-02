@@ -6,7 +6,6 @@ from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.views import View
-from profiles.models import Profile
 
 
 def login_view(request):
@@ -21,12 +20,6 @@ def login_view(request):
 
         if user is not None:
             login(request, user)
-            # if not Profile.objects.filter['full_name']:
-            #     return redirect("form")
-            #     print("running")
-            # else:
-            #     print("not running")
-            #     return redirect("/recommendation")
             return redirect("/recommendation")
         else:
             msg = 'Invalid credentials'
@@ -35,21 +28,24 @@ def login_view(request):
     return render(request, "login.html", {"msg" : msg})
 
 def register_user(request):
-    msg     = None
-    success = False
+    msg = ""
 
     if request.method == "POST":
         username = request.POST.get("username")
         password = request.POST.get("password")
         email = request.POST.get("email")
-        User.objects.create_user(username=username, password=password, email=email)
+        # User.objects.create_user(username=username, password=password, email=email)
         msg     = 'User created.'
         success = True
-        return redirect('/form')
-    else:
-        msg = 'Form is not valid'
+    #     return redirect('/form')
+    # else:
+    #     msg = 'Form is not valid'
+        if User.objects.create_user(username=username, password=password, email=email):
+            return redirect("/form")
+        else:
+            msg = 'Form is not valid'
 
-    return render(request, "register.html", {"msg" : msg, "success" : success })
+    return render(request, "register.html", {"msg" : msg})
 
 class LogoutView(View):
     def get(self, request):
