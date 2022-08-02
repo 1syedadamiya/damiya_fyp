@@ -3,9 +3,9 @@ from django.contrib.auth.models import User
 
 
 class Feedback (models.Model):
-   name = models.CharField(max_length=50)
-   email = models.EmailField()
-   Feedback_text = models.CharField(max_length=1000)
+   name = models.CharField(max_length=50,default="")
+   email = models.EmailField(default="")
+   Feedback_text = models.CharField(max_length=1000,default="")
 
    def _str_(self):
        return str(self.name)
