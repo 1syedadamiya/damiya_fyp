@@ -9,7 +9,7 @@ urlpatterns = [
     path("logout/", LogoutView.as_view(), name="logout"),
 
     path('reset_password/',
-     auth_views.PasswordResetView.as_view(template_name="accounts/password_reset.html"),
+     auth_views.PasswordResetView.as_view(template_name="forgot_password.html"),
      name="reset_password"),
 
     path('reset_password_sent/', 

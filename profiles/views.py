@@ -67,7 +67,9 @@ def edit(request):
         inter_grade = request.POST.get("inter_grade")
         inter_board = request.POST.get("inter_board")
         university_name = request.POST.get("university_name")
+        field_of_interest = request.POST.get("field_of_interest")
 
+        print(field_of_interest)
         query.full_name = full_name
         query.email = email
         query.phone_number = phone_number
@@ -90,6 +92,7 @@ def edit(request):
         query.inter_grade = inter_grade
         query.inter_board = inter_board
         query.university_name = university_name
+        query.field_of_interest = field_of_interest
         query.save()
     return render(request, "edit.html",{"query":query})
 

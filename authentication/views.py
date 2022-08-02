@@ -55,3 +55,4 @@ class LogoutView(View):
     def get(self, request):
         auth.logout(request)
         return redirect('home')
+
