@@ -112,8 +112,10 @@
                             <div class="form-row mt-4 justify-content-around">
                               <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                                 <label for="">Gender</label>
-                                <input class="multisteps-form__input form-control" type="text" name="gender" value="{{query.gender}}" required/>
-                                <span class="focus-input-name"></span>
+                                <select class="multisteps-form__select form-control" name="gender" required>
+                                  <option>{{query.gender}}</option>
+                                  <option>M</option>
+                                </select>
                               </div>
                               <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                                 <label for="">Age</label>
@@ -228,7 +230,7 @@
                               <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                                 <label for="">University Name</label>
                                 <select class="multisteps-form__select form-control" name="university_name" required>
-                                  <option disabled selected>{{query.university_name}}</option>
+                                  <option>{{query.university_name}}</option>
                                   <option>University of Engineering and Technology</option>
                                   <option>Government College University Lahore</option>
                                   <option>Lahore College for Women University</option>
@@ -240,9 +242,10 @@
                               </div>
                               <div class="col-lg-5 col-md-5 col-sm-6 mt-4 mt-sm-0">
                                 <label for="">Field of Interest</label>
-                                <select class="multisteps-form__select form-control" name="field_of_interest">
-                                  <option disabled selected value="SE">SE</option>
-                                  <option value="IT">IT</option>
+                                <select class="multisteps-form__select form-control" name="field_of_interest" required>
+                                  <option>{{query.field_of_interest}}</option>
+                                  <option>SE</option>
+                                  <option>IT</option>
                                   <option>CE</option>
                                   <option>CS</option>
                                   <option>A</option>

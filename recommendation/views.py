@@ -47,4 +47,4 @@ def savedlinks(request):
 
 
 def aboutus(request):
-    return render(request, "aboutus.html")
+    return render(request, "AboutUs.html")
