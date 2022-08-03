@@ -1,11 +1,13 @@
 from django.contrib import auth
 from django.core.checks import messages
+from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.views import View
+from fyp_pucho import settings
 
 
 def login_view(request):
@@ -20,7 +22,7 @@ def login_view(request):
 
         if user is not None:
             login(request, user)
-            return redirect("/recommendation")
+            return redirect("/form")
         else:
             msg = 'Invalid credentials'
 
@@ -41,7 +43,7 @@ def register_user(request):
     # else:
     #     msg = 'Form is not valid'
         if User.objects.create_user(username=username, password=password, email=email):
-            return redirect("/form")
+            return redirect("/login")
         else:
             msg = 'Form is not valid'
 
