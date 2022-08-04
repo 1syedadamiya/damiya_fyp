@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import uetuni, ueuni, puuni, kcuni, ituuni, lcwuuni, gcuni, gcdepts, itudepts, kcdepts, lcwudepts, pudepts, uetdepts, uedepts
+from .views import uetuni, ueuni, kcuni, ituuni, lcwuuni, gcuni, gcdepts, itudepts, kcdepts, lcwudepts, uetdepts, uedepts
 from . import views
 urlpatterns = [
     path('gcuni/', gcuni, name="gcuni"),
@@ -8,9 +8,6 @@ urlpatterns = [
     path('uetuni/<str:deptname>/', uetdepts, name="uetdepts"),
     path('ueuni/', ueuni, name="ueuni"),
     path('ueuni/<str:deptname>/', uedepts, name="uedepts"),
-    path('puuni/', puuni, name="puuni"),
-    path('puuni/<str:deptname>/', pudepts, name="pudepts"),
-    # path('puuni/<str:deptname>/', puodepts, name="puodepts"),
     path('kcuni/', kcuni, name="kcuni"),
     path('kcuni/<str:deptname>/', kcdepts, name="kcdepts"),
     path('lcwuuni/', lcwuuni, name="lcwuuni"),

@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
  
 choices = (('F','Female'),('M','Male'))
-uni_choices = (('University of Engineering and Technology','University of Engineering and Technology'),('Government College University Lahore','Government College University Lahore'),('Lahore College for Women University','Lahore College for Women University'),('Information Technology University','Information Technology University'),('Kinnard College For Women University','Kinnard College For Women University'),('University of Education','University of Education'),('University of Punjab','University of Punjab'))
+uni_choices = (('University of Engineering and Technology','University of Engineering and Technology'),('Government College University Lahore','Government College University Lahore'),('Lahore College for Women University','Lahore College for Women University'),('Information Technology University','Information Technology University'),('Kinnard College For Women University','Kinnard College For Women University'),('University of Education','University of Education'))
 dept_choices = (('SE','SE'),('IT','IT'),('CE','CE'),('CS','CS'),('A','A'),('AED','AED'),('CRP','CRP'),('EER','EER'),('CE','CE'),('IME','IME'),('ME','ME'),('MCE','MCE'),('MINE','MINE'),('MME','MME'),('PGE','PGE'),('PID','PID'),('PPE','PPE'),('TEM','TEM'),('CHE','CHE'))
 class Profile(models.Model):
     full_name = models.CharField(max_length=50)
