@@ -96,20 +96,7 @@
               <div class="row">
                 <div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                   <h3 class="footer_title">Pucho</h3>
-                  <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-5 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                  <h4 class="footer_title">Contact</h4>
-                  <div class="d-flex align-items-center">
-                    <div>
-                      <i class="lni lni-search"></i>
-                      pucho@gmail.com
-                    </div>
-                    <div>
-                      <i class="lni lni-search"></i>
-                      o321-1234567
-                    </div>
-                  </div>
+                  <p class="text-light">We are the pioneers in the field of providing recommendations to the bulk of students who just drove into the choice of academic career after giving their inter exams with bunch of questions and ambiguities in their minds. This moment requires a keen and deep guidance that reflects students interests and latest scores in order to furnish an advice in concerns of their career paths. Hence we equip them with this opportunity to ace with pace in academic race with bright face.</p>
                 </div>
               </div>
             </div>
@@ -117,16 +104,13 @@
               <h4 class="footer_title">Services</h4>
               <div class="link">
                 <li>
-                  <a href="home.html">Home</a>
+                  <a href="{% url 'home' %}">Home</a>
                 </li>
                 <li>
-                  <a href="recommendation.html">Recommendation</a>
+                  <a href="{% url 'aboutus' %}">About Us</a>
                 </li>
                 <li>
-                  <a href="about.html">About Us</a>
-                </li>
-                <li>
-                  <a href="feedback.html">Feedback</a>
+                  <a href="{% url 'feedback' %}">Feedback</a>
                 </li>
               </div>
             </div>
@@ -134,25 +118,25 @@
               <h4 class="footer_title">Universities</h4>
               <div class="link">
                 <li>
-                  <a href="UETuni.html">UET</a>
+                  <a href="{% url 'uetuni' %}">UET</a>
                 </li>
                 <li>
-                  <a href="GCuni.html">GCU</a>
+                  <a href="{% url 'gcuni' %}">GCU</a>
                 </li>
                 <li>
-                  <a href="LCWUuni.html">LCWU</a>
+                  <a href="{% url 'lcwuuni' %}">LCWU</a>
                 </li>
                 <li>
-                  <a href="PUuni.html">PU</a>
+                  <a href="{% url 'puuni' %}">PU</a>
                 </li>
                 <li>
-                  <a href="UETuni.html">UE</a>
+                  <a href="{% url 'ueuni' %}">UE</a>
                 </li>
                 <li>
-                  <a href="ITUuni.html">ITU</a>
+                  <a href="{% url 'ituuni' %}">ITU</a>
                 </li>
                 <li>
-                  <a href="KCuni.html">KC</a>
+                  <a href="{% url 'kcuni' %}">KC</a>
                 </li>
               </div>
             </div>
@@ -196,7 +180,7 @@
 
     <!--====== Scrolling Nav js ======
     <script src="../js/jquery.easing.min.js"></script>-->
-    <script src="{% static 'js/scrolling-nav.js' %}"></script>
+<!--    <script src="{% static 'js/scrolling-nav.js' %}"></script>-->
 
     <!--====== wow js ======-->
     <script src="{% static 'js/wow.min.js' %}"></script>
